@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #2a2a40;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00adb5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b3b58;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #00adb5;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00adb5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #008c95;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Task Item Styling */
+.task-item {
+    background-color: #3b3b58;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.task-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.task-time {
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Completed Task Styling */
+.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.completed .task-time {
+    color: #666;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+.complete-btn { background-color: #28a745; }
+.complete-btn:hover { background-color: #218838; }
+
+.edit-btn { background-color: #ffc107; color: #000; }
+.edit-btn:hover { background-color: #e0a800; }
+
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #c82333; }
